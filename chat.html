@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title> TOPYS | 全球顶尖创意分享平台 OPEN YOUR MIND </title>
+    <link rel="stylesheet" href="css/clearAllDefault.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+
+</head>
+<body>
+
+<!--头部-->
+<header>
+    <nav class="navbar navbar-default nav-bgc">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand text-black nav-center" href="#"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navLeft">
+                    <li><a href="#" class="text-black">发现<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="text-black active">有聊</a></li>
+                    <li><a href="#" class="text-black">minds学院</a></li>
+                    <li><a href="#" class="text-black">活动</a></li>
+                    <li><a href="#" class="text-black">招聘</a></li>
+                    <li class="line hidden-sm hidden-xs"></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="search">
+                        <a href="javascript:" class="icon-search"></a>
+                        <input type="text" placeholder="输入搜索关键字" id="searchText">
+                    </li>
+                    <li><a href="#" class="icon-love"></a></li>
+                    <li><a href="#" class="icon-user"></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!--导航栏-->
+<section class="chat-carousel">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="carousel-main">
+                <p>今天聊什么 ?</p>
+                <span></span>
+                <h3>什么冷知识 ?这些都是常识 !</h3>
+                <a href="#">点击参与</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--topic-->
+<section class="chat-topic">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="chat-topicSearch">
+                <div>
+                    <i class="icon-bigSearch"></i>
+                    <input type="text">
+                    <span>搜索</span>
+                </div>
+            </div>
+            <div class="chat-topicList">
+            </div>
+        </div>
+    </div>
+</section>
+<!--加载中-->
+<section class="loading" id="loading">
+    <canvas id="canvas" width="100" height="100">
+
+    </canvas>
+</section>
+<!--加载按钮-->
+<section class="addMore" id="addMore">
+    <a href="javascript:" id="loadData">浏览更多</a>
+</section>
+<!--链接-->
+<section class="link">
+    <div class="linkLeft">
+        <input type="text" placeholder="输入邮箱订阅Newsletter">
+        <span></span>
+    </div>
+    <div class="linkRight">
+        <ul>
+            <li>关注我们</li>
+            <li><i class="icon-sina"></i></li>
+            <li><i class="icon-wechat"></i></li>
+            <li><i class="icon-facebook"></i></li>
+            <li><i class="icon-youku"></i></li>
+        </ul>
+    </div>
+</section>
+<!--底部-->
+<footer>
+    <ul>
+        <li>关于我们</li>
+        <li>加入我们</li>
+        <li>招聘及广告服务</li>
+        <li>免责</li>
+        <li>移动应用</li>
+    </ul>
+    <p>
+        TOPYS.CN 深圳市看见文化传播有限公司 2003-2015 ALL RIGHTS RESERVED. <a href="javascript:">粤ICP备06047857号</a>
+    </p>
+</footer>
+<!--右侧点击到顶部-->
+<div class="scrollTop">
+    <a href="javascript:" id="returnTop"></a>
+</div>
+
+
+
+
+<script src="jquery/jquery-3.2.0.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>

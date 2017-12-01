@@ -1,0 +1,479 @@
+body {
+    font-family: "Helvetica Neue",
+    Helvetica,
+    Microsoft Yahei,
+    Hiragino Sans GB,
+    WenQuanYi Micro Hei,
+    sans-serif;
+    color: #ffffff;
+}
+.inCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.text-black{
+    color: #202020!important;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+    color: #202020;
+    background-color: transparent!important;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+[class^='icon-']{
+    font-family:'iconfont';
+    font-style: normal;
+}
+
+
+header{
+    width: 100%;
+    height: 66px;
+
+}
+header .navbar{
+    z-index: 9998;
+    border-radius: 0;
+    position: relative;
+}
+header .nav-bgc{
+    background-color: #fff;
+    border-bottom:1px solid #ededed;
+    box-shadow: #ededed 1px 1px;
+    height: 66px;
+    width: 100%;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*logo*/
+header .nav-bgc .nav-center{
+    height: 24px;
+    width: 110px;
+    background-image: url('../images/chat/topys-logo.png');
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -55px!important;
+    top: 0;
+    margin-top: 21px;
+   background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+/*顶部左侧*/
+
+header .nav li{
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+header .nav li.active{
+    border-bottom: 2px solid #000;
+}
+header .nav li.line{
+    position: absolute;
+    border-bottom: 2px solid #000;
+    bottom: 0;
+    left: 12px;
+}
+header .nav li a{
+    font-size: 14px;
+    line-height: 36px;
+}
+/*顶部左侧 底部滑动*/
+
+
+
+
+/*右侧*/
+header .navbar-right li:nth-child(1){
+    width: 35px;
+    height: 25px;
+    overflow: hidden;
+}
+header .navbar-right li:nth-child(1) a{
+    float: left;
+}
+header .navbar-right li:nth-child(1) input{
+    width: 100px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    float: left;
+}
+header .navbar-right li{
+    padding: 23px 5px;
+    margin-right: 6px;
+
+}
+header .navbar-right li a{
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+header .navbar-right li input{
+    color: black;
+}
+header .navbar-right .icon-search{
+    background: url(../images/chat/chat-item/nav/search.png) 0 0 no-repeat;
+    background-size: 25px;
+}
+header .navbar-right .icon-love{
+    background: url(../images/chat/chat-item/nav/love.png) 0 0 no-repeat;
+    background-size: 25px;
+}
+header .navbar-right .icon-user{
+    background: url(../images/chat/chat-item/nav/user.png) 0 0 no-repeat;
+    background-size: cover;
+}
+header .navbar-right .icon-search:hover{
+    background-position: 0 -25px;
+}
+header .navbar-right .icon-love:hover{
+    background-position: 0 -25px;
+}
+header .navbar-right .icon-user:hover{
+    background-position: 0 -25px;
+}
+
+/*轮播图      */
+section.chat-carousel .carousel-main{
+    width: 100%;
+    height: 320px;
+    background: url('../images/chat/chat-nav-bg.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+section.chat-carousel .carousel-main p{
+    padding-top: 45px;
+    /*text-align: center;*/
+    font-size: 14px;
+}
+section.chat-carousel .carousel-main span{
+    display: inline-block;
+    height: 1px;
+    background-color: #fff;
+    width: 30px;
+}
+section.chat-carousel .carousel-main h3{
+    margin: 45px 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+}
+section.chat-carousel .carousel-main a{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    height: 40px;
+    line-height: 40px;
+    width: 160px;
+    transition: all 0.5s;
+}
+section.chat-carousel .carousel-main a:hover{
+    color: #000000;
+    background-color: #fff!important;
+}
+/*topic*/
+section.chat-topic{
+    padding: 50px 0;
+    /*background-color: skyblue;*/
+}
+section.chat-topic .chat-topicSearch{
+
+}
+section.chat-topic .chat-topicSearch >div{
+    border: 1px solid #979797;
+    width: 1000px;
+    height: 48px;
+    margin: 0 auto;
+    line-height: 48px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.icon-bigSearch::before{
+    content:'\e6df';
+    font-size: 24px;
+    color: #000000;
+}
+section.chat-topic .chat-topicSearch >div i{
+    padding-left: 10px;
+}
+section.chat-topic .chat-topicSearch >div input{
+    height: 30px;
+    width: calc(100% - 124px);
+    line-height: 30px;
+    color: #000000;
+    padding-left: 20px;
+    /*position: absolute;*/
+    /*left: 30px;*/
+    /*top: 50%;*/
+    /*margin-top: -15px;*/
+}
+section.chat-topic .chat-topicSearch >div span{
+    background-color: #1d2129;
+    color: #ffffff;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+section.chat-topic .chat-topicList{
+    /*background-color: skyblue;*/
+    width: 1200px;
+    padding: 50px 0 50px 50px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+/*每一个项目*/
+.icon-userNum::before{
+    content:'\e614';
+    font-size: 25px;
+    color: #fff;
+}
+section.chat-topic .chat-topicList .oDiv{
+    width: 248px;
+    height: 248px;
+    float: left;
+    margin: 0 35px 45px 0;
+    position: relative;
+    /*background-color: yellow;*/
+    /*background-image: url('../images/chat/chat-item/chat-item1.png');*/
+    background-size: cover;
+
+}
+section.chat-topic .chat-topicList .oDiv .oDivMask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section.chat-topic .chat-topicList .oDiv .oA{
+    display: block;
+    font-size: 22px;
+    width: 150px;
+    line-height: 30px;
+    color: #ffffff;
+    position: absolute;
+    /*background-color: red;*/
+    left: 15px;
+    top: 15px;
+    z-index: 20;
+}
+section.chat-topic .chat-topicList .oDiv .oDivBottom{
+    width: 230px;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    /*background-color: skyblue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+
+}
+section.chat-topic .chat-topicList .oDiv .oDivBottom .oDivBLeft{
+    display: flex;
+    align-items: center;
+}
+section.chat-topic .chat-topicList .oDiv .oDivBottom .oDivBLeft .oP{
+    line-height: 25px;
+    font-size: 34px;
+    padding: 10px 0 0 5px;
+}
+/*以上这块是每一个项目的设置*/
+/*正在加载动画*/
+section.loading{
+    width: 100%;
+    height: 150px;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    display: none;
+}
+section.loading canvas{
+    animation:runCircle 2s infinite linear;
+}
+@keyframes runCircle {
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*点击加载section*/
+section.addMore{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding: 50px 0 80px 0;
+    /*border-bottom: 1px solid #e2e2e2;*/
+    /*background-color: skyblue;*/
+}
+section.addMore a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #a5a7aa;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    color: #757779;
+}
+section.addMore a:hover{
+    color: #202020;
+    border: 1px solid #202020;
+}
+
+/*底部链接link*/
+section.link{
+    width: 1085px;
+    padding: 18px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid #e2e2e2;
+    border-bottom:1px solid #e2e2e2;
+}
+section.link .linkLeft{
+    width: 338px;
+    height: 44px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.link .linkLeft input{
+    width: 50%;
+    height: 42px;
+    padding: 5px 10px;
+    line-height: 32px;
+    border: none;
+    color: #202020;
+}
+section.link .linkLeft span{
+    display: inline-block;
+    width: 48px;
+    height: 42px;
+    border-left:1px solid #e2e2e2;
+    background-image: url('../images/chat/linkLeft.png');
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+/*链接link 右侧*/
+.link [class^='icon-']{
+    font-size: 28px;
+    color: #cccccc;
+}
+.link [class^='icon-']:hover{
+    color: #666;
+}
+.icon-sina::before{
+    content:'\e67b';
+}
+.icon-wechat::before{
+    content:'\e603';
+}
+.icon-facebook::before{
+    content:'\e686';
+}
+.icon-youku::before{
+    content:'\e60c';
+}
+section.link .linkRight ul{
+    padding-top: 6.5px;
+    margin-right: 10px;
+    height: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section.link .linkRight ul li{
+    margin: 0 15px;
+
+}
+section.link .linkRight ul li:nth-child(1){
+    color: #202020;
+}
+section.link .linkRight ul li +li{
+    cursor: pointer;
+}
+
+
+/*底部*/
+footer{
+    padding: 30px 0;
+    text-align: center;
+    color:#202020 ;
+    font-size: 12px;
+
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li{
+    margin: 0 10px;
+    cursor: pointer;
+}
+footer p,footer a{
+    color: #757779;
+}
+
+/*右侧点击到顶部*/
+.scrollTop{
+    width: 56px;
+    height: 56px;
+    /*background-color: skyblue;*/
+    position: fixed;
+    right: 3%;
+    bottom: 100px;
+}
+.scrollTop a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    background-image: url('../images/chat/return-top.png');
+    background-position: -1px -1px;
+    background-repeat: no-repeat;
+    background-size: 56px;
+}
+.scrollTop a:hover{
+    background-position: -1px -57px;
+}
+
+
+
